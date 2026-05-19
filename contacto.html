@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contáctanos — SHOWTECH SOLUTIONS. Llámanos, escríbenos por WhatsApp o completa el formulario para cotizar tu evento en Lima, Perú." />
+  <title>Contacto | SHOWTECH SOLUTIONS</title>
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="SHOWTECH SOLUTIONS — Inicio">
+        <div class="navbar__logo-text">
+          <span><strong>SHOW</strong>TECH</span>
+          <span>SOLUTIONS</span>
+        </div>
+      </a>
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        <a href="index.html" class="navbar__link">Inicio</a>
+        <a href="nosotros.html" class="navbar__link">Nosotros</a>
+        <a href="servicios.html" class="navbar__link">Servicios</a>
+        <a href="contacto.html" class="navbar__link active">Contacto</a>
+      </nav>
+      <a href="#contactForm" class="btn btn--primary navbar__cta">Escribirnos</a>
+      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="navbar__mobile" aria-label="Menú móvil">
+    <button class="navbar__mobile-close" aria-label="Cerrar menú">✕</button>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html" class="active">Contacto</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero contacto-hero">
+      <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1400&q=80')">
+        <!-- REEMPLAZAR: imagen real de evento/reunión -->
+      </div>
+      <div class="container page-hero__content">
+        <span class="tag-label reveal">Hablemos de tu evento</span>
+        <h1 class="display display--lg reveal reveal--d1" style="margin-top: 12px;">Contáctanos</h1>
+        <p class="reveal reveal--d2" style="color: var(--text-soft); font-size: 1.05rem; margin-top: 16px; max-width: 500px;">
+          Cuéntanos tu idea y te ayudaremos a convertirla en una celebración inolvidable.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO PRINCIPAL -->
+    <section class="section contact-main">
+      <div class="container">
+        <div class="contact-main__grid">
+
+          <!-- Columna izquierda: info + mapa -->
+          <div class="contact-info reveal--left">
+
+            <div class="contact-info__block">
+              <span class="tag-label">Información de contacto</span>
+              <div class="divider"></div>
+              <h2 class="display display--sm" style="margin-bottom: 36px;">¿Cómo podemos ayudarte?</h2>
+            </div>
+
+            <!-- Cards de contacto -->
+            <div class="contact-cards">
+
+              <!-- WhatsApp (prioritario para Lima) -->
+              <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20cotizar%20un%20evento."
+                 class="contact-card contact-card--wa"
+                 target="_blank"
+                 rel="noopener">
+                <div class="contact-card__icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-card__body">
+                  <h4>WhatsApp</h4>
+                  <!-- REEMPLAZAR: número real -->
+                  <p>+51 999 999 999</p>
+                  <span>Respuesta rápida · Lun–Sáb 9am–8pm</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square contact-card__arrow"></i>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:contacto@showtechsolutions.com.pe"
+                 class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-card__body">
+                  <h4>Correo Electrónico</h4>
+                  <p>contacto@showtechsolutions.com.pe</p>
+                  <span>Respuesta en menos de 24 horas</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square contact-card__arrow"></i>
+              </a>
+
+              <!-- Teléfono -->
+              <a href="tel:+51999999999" class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card__body">
+                  <h4>Teléfono</h4>
+                  <!-- REEMPLAZAR: número real -->
+                  <p>+51 999 999 999</p>
+                  <span>Lun–Vie 9:00am – 6:00pm</span>
+                </div>
+              </a>
+
+              <!-- Dirección -->
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-card__body">
+                  <h4>Oficina</h4>
+                  <p>Av. Prol. Iquitos 2001, Lince 15046</p>
+                  <span>Lima, Perú</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- RRSS -->
+            <div class="contact-social">
+              <p class="tag-label" style="margin-bottom: 16px;">Síguenos en redes</p>
+              <div class="contact-social__links">
+                <a href="#" class="contact-social__link" target="_blank" rel="noopener" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="#" class="contact-social__link" target="_blank" rel="noopener" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+                <a href="#" class="contact-social__link" target="_blank" rel="noopener" aria-label="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                  <span>YouTube</span>
+                </a>
+                <a href="#" class="contact-social__link" target="_blank" rel="noopener" aria-label="TikTok">
+                  <i class="fa-brands fa-tiktok"></i>
+                  <span>TikTok</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna derecha: formulario -->
+          <div class="contact-form-wrap reveal--right">
+            <div class="contact-form-card">
+
+              <div class="contact-form-card__header">
+                <h3>Solicitar Cotización</h3>
+                <p>Completa el formulario y te contactaremos a la brevedad.</p>
+              </div>
+
+              <!-- Honeypot anti-spam (oculto) -->
+              <div style="display:none" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="nombre" class="form-label">
+                      Nombre completo <span class="form-required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      class="form-input"
+                      placeholder="Tu nombre"
+                      required
+                      autocomplete="name"
+                    />
+                    <span class="form-error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="form-label">
+                      Correo electrónico <span class="form-required">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-input"
+                      placeholder="tu@email.com"
+                      required
+                      autocomplete="email"
+                    />
+                    <span class="form-error" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="telefono" class="form-label">
+                      Teléfono / WhatsApp
+                    </label>
+                    <input
+                      type="tel"
+                      id="telefono"
+                      name="telefono"
+                      class="form-input"
+                      placeholder="+51 999 999 999"
+                      autocomplete="tel"
+                    />
+                    <span class="form-error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="tipo" class="form-label">
+                      Tipo de evento
+                    </label>
+                    <select id="tipo" name="tipo" class="form-input form-select">
+                      <option value="">Seleccionar...</option>
+                      <option value="Fiesta privada / Cumpleaños">Fiesta privada / Cumpleaños</option>
+                      <option value="Boda / Matrimonio">Boda / Matrimonio</option>
+                      <option value="Evento corporativo">Evento corporativo</option>
+                      <option value="Baby Shower / Bautizo">Baby Shower / Bautizo</option>
+                      <option value="15 años / Graduación">15 años / Graduación</option>
+                      <option value="Activación / Lanzamiento">Activación / Lanzamiento</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje" class="form-label">
+                    Cuéntanos de tu evento <span class="form-required">*</span>
+                  </label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    class="form-input form-textarea"
+                    placeholder="Fecha aproximada, número de invitados, lugar, tu visión del evento..."
+                    required
+                    rows="5"
+                  ></textarea>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Estado del formulario -->
+                <div id="formStatus" class="form-status" role="alert" style="display:none;"></div>
+
+                <button type="submit" class="btn btn--primary contact-form__submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Enviar Mensaje
+                </button>
+
+                <p class="contact-form__note">
+                  <i class="fa-solid fa-lock"></i>
+                  Tu información es confidencial. No compartimos tus datos con terceros.
+                </p>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="section section--dark map-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tag-label">Ubicación</span>
+          <div class="divider"></div>
+          <h2 class="display display--sm">Encuéntranos</h2>
+          <p style="color: var(--text-muted); margin-top: 8px;">Av. Prol. Iquitos 2001, Lince 15046 — Lima, Perú</p>
+        </div>
+
+        <div class="map-wrap reveal">
+          <!-- Google Maps embed — REEMPLAZAR src con URL real del jefe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3607498563!2d-77.02871132394316!3d-12.09049794356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c80a68c0a285%3A0xf5793be0c4acd67!2sAv.%20Prol.%20Iquitos%202001%2C%20Lince%2015046!5e0!3m2!1ses-419!2spe!4v1715000000000!5m2!1ses-419!2spe"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de SHOWTECH SOLUTIONS en Lima"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ RÁPIDO -->
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="tag-label">Preguntas frecuentes</span>
+          <div class="divider divider--center"></div>
+          <h2 class="display display--md">FAQ</h2>
+          <p>Resolvemos las dudas más comunes antes de contactarnos.</p>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item reveal reveal--d1">
+            <summary class="faq-item__q">
+              ¿Con cuánta anticipación debo contratar el servicio?
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </summary>
+            <p class="faq-item__a">Recomendamos contactarnos con al menos 4–8 semanas de anticipación para eventos sociales y 2–4 meses para bodas o eventos corporativos grandes. Sin embargo, podemos evaluar solicitudes de último momento.</p>
+          </details>
+
+          <details class="faq-item reveal reveal--d2">
+            <summary class="faq-item__q">
+              ¿Tienen paquetes de precios fijos?
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </summary>
+            <p class="faq-item__a">Cada evento es único, por lo que trabajamos con cotizaciones personalizadas. Nos adaptamos a distintos presupuestos sin comprometer la calidad. Solicita tu cotización sin costo y sin compromiso.</p>
+          </details>
+
+          <details class="faq-item reveal reveal--d3">
+            <summary class="faq-item__q">
+              ¿Organizan eventos fuera de Lima?
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </summary>
+            <p class="faq-item__a">Sí. Contamos con proveedores en varias regiones del país. Para eventos en provincias coordinamos todo con anticipación para garantizar la misma calidad de servicio.</p>
+          </details>
+
+          <details class="faq-item reveal reveal--d4">
+            <summary class="faq-item__q">
+              ¿Qué incluye el servicio de coordinación?
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </summary>
+            <p class="faq-item__a">Un coordinador dedicado gestiona proveedores, cronograma, montaje y supervisión en vivo durante el evento. Nos encargamos de todo para que tú solo disfrutes.</p>
+          </details>
+
+          <details class="faq-item reveal reveal--d5">
+            <summary class="faq-item__q">
+              ¿Cómo es el proceso de pago?
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </summary>
+            <p class="faq-item__a">Trabajamos con un adelanto para confirmar la fecha y el saldo restante antes o el día del evento. Los detalles se coordinan con cada cliente según el tipo de evento y presupuesto.</p>
+          </details>
+
+          <details class="faq-item reveal reveal--d1">
+            <summary class="faq-item__q">
+              ¿Brindan servicios para eventos virtuales o híbridos?
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </summary>
+            <p class="faq-item__a">Sí. Contamos con soluciones de streaming, producción en vivo y plataformas digitales para eventos que combinen presencia física con participantes remotos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="navbar__logo-text">
+            <span style="font-size: 1.2rem;"><strong style="color: var(--brand);">SHOW</strong>TECH</span>
+            <span style="font-size: 0.6rem; letter-spacing: 0.25em; color: var(--text-muted);">SOLUTIONS</span>
+          </div>
+          <p>Organizadores de eventos en Lima, Perú. Creamos experiencias inolvidables con pasión, creatividad y profesionalismo desde 2015.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__social" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer__social" aria-label="TikTok" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Páginas</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="servicios.html#fiestas">Fiestas Privadas</a></li>
+            <li><a href="servicios.html#bodas">Bodas</a></li>
+            <li><a href="servicios.html#corporativos">Eventos Corporativos</a></li>
+            <li><a href="servicios.html">Catering</a></li>
+            <li><a href="servicios.html">Decoración</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <div class="footer__contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Av. Prol. Iquitos 2001,<br />Lince 15046, Lima</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span><a href="mailto:contacto@showtechsolutions.com.pe">contacto@showtechsolutions.com.pe</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span><a href="https://wa.me/51999999999" target="_blank" rel="noopener">+51 999 999 999</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2015–2026 SHOWTECH SOLUTIONS S.A.C. Todos los derechos reservados.</p>
+        <p>Diseñado por <a href="#">SHOWTECH DEV</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20cotizar%20un%20evento."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Contactar por WhatsApp">
+    <div class="whatsapp-float__pulse"></div>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</body>
+</html>

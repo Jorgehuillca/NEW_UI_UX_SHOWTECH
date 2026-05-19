@@ -1,0 +1,155 @@
+/* =====================================================
+   SHOWTECH SOLUTIONS — nosotros.css
+   ===================================================== */
+
+/* Hero específico */
+.nosotros-hero .page-hero__bg {
+  filter: brightness(0.25);
+}
+
+/* About intro */
+.about-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-intro__grid p {
+  color: var(--text-muted);
+  font-size: 0.97rem;
+  line-height: 1.9;
+}
+
+/* Misión / Visión */
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.mv-image__wrap {
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.mv-image__placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.mv-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mv-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.mv-card:hover {
+  border-color: var(--border-2);
+  transform: translateX(6px);
+}
+
+.mv-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--brand-light);
+  border: 1px solid var(--border-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.mv-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.mv-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* Why us */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.why-card:hover {
+  border-color: var(--border-2);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.why-card > i {
+  font-size: 1.8rem;
+  color: var(--brand);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.why-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-intro__grid,
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .mv-image__wrap {
+    aspect-ratio: 16/7;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}

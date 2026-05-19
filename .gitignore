@@ -1,0 +1,33 @@
+# ===========================
+# SHOWTECH — .gitignore
+# ===========================
+# Logs del backend (no subir datos de contacto reales)
+backend/logs/*.log
+
+# Variables de entorno y configs locales
+.env
+.env.local
+config.local.php
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (si se usa en dev)
+node_modules/
+npm-debug.log*
+
+# Build / dist (si se agregan herramientas)
+dist/
+build/
+
+# Uploads temporales del servidor
+assets/uploads/*.tmp

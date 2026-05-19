@@ -1,0 +1,222 @@
+/* =====================================================
+   SHOWTECH SOLUTIONS — servicios.css
+   ===================================================== */
+
+/* Hero específico */
+.servicios-hero .page-hero__bg {
+  filter: brightness(0.22);
+}
+
+/* Event type blocks (alternados) */
+.event-type-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid var(--border);
+}
+
+.event-type-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.event-type-block--reverse {
+  direction: rtl;
+}
+
+.event-type-block--reverse > * {
+  direction: ltr;
+}
+
+.event-type-block__img {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-lg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: transform 0.6s var(--ease-out);
+}
+
+.event-type-block__visual:hover .event-type-block__img {
+  transform: scale(1.02);
+}
+
+.event-type-block__visual {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.event-type-block__badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand);
+  border: 1px solid var(--border-2);
+  border-radius: 999px;
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.event-type-block__content h3 {
+  margin-bottom: 20px;
+}
+
+.event-type-block__content p {
+  color: var(--text-muted);
+  font-size: 0.97rem;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.event-type-block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.event-type-block__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.event-type-block__list li i {
+  color: var(--brand);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Services full grid */
+.services-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-full-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  transition: all var(--duration) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-full-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--grad-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+
+.service-full-card:hover {
+  border-color: var(--border-2);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-full-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-full-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--brand-light);
+  border: 1px solid var(--border-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--brand);
+  margin-bottom: 24px;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.service-full-card:hover .service-full-card__icon {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.service-full-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-full-card p {
+  font-size: 0.87rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* CTA oscuro en servicios */
+.services-cta-dark {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.services-cta-dark__inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.services-cta-dark__inner p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-full-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .event-type-block,
+  .event-type-block--reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services-cta-dark__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .services-cta-dark__inner > div:last-child {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-full-grid {
+    grid-template-columns: 1fr;
+  }
+}
