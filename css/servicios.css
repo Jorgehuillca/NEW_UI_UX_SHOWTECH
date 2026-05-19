@@ -1,11 +1,6 @@
 /* =====================================================
-   SHOWTECH SOLUTIONS — servicios.css
+  SHOWTECH SOLUTIONS — servicios.css
    ===================================================== */
-
-/* Hero específico */
-.servicios-hero .page-hero__bg {
-  filter: brightness(0.22);
-}
 
 /* Event type blocks (alternados) */
 .event-type-block {

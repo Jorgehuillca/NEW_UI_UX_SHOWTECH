@@ -1,12 +1,6 @@
 /* =====================================================
-   SHOWTECH SOLUTIONS — contacto.css
+  SHOWTECH SOLUTIONS — contacto.css
    ===================================================== */
-
-/* Hero */
-.contacto-hero .page-hero__bg {
-  filter: brightness(0.2);
-}
-
 /* -------- Contact Main Grid -------- */
 .contact-main__grid {
   display: grid;

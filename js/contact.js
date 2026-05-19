@@ -1,6 +1,6 @@
 /* =====================================================
-   SHOWTECH SOLUTIONS — contact.js
-   Validación y envío del formulario de contacto
+  SHOWTECH SOLUTIONS — contact.js
+  Validación y envío del formulario de contacto
    ===================================================== */
 
 (function () {

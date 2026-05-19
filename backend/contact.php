@@ -85,23 +85,23 @@ $bodyHTML = "
 <html lang='es'>
 <head><meta charset='UTF-8'><title>Nuevo contacto</title></head>
 <body style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #f5f5f5; padding: 24px;'>
-  <div style='background: #09090B; padding: 24px; border-radius: 12px; margin-bottom: 0;'>
+    <div style='background: #09090B; padding: 24px; border-radius: 12px; margin-bottom: 0;'>
     <h1 style='color: #C8249A; margin: 0; font-size: 1.4rem;'>SHOWTECH SOLUTIONS</h1>
     <p style='color: #888; margin: 4px 0 0; font-size: 0.85rem;'>Nuevo mensaje desde la web</p>
-  </div>
-  <div style='background: #fff; padding: 32px; border-radius: 0 0 12px 12px;'>
+    </div>
+    <div style='background: #fff; padding: 32px; border-radius: 0 0 12px 12px;'>
     <table style='width: 100%; border-collapse: collapse;'>
-      <tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; width: 130px; font-size: 0.9rem;'>Nombre</td><td style='padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 600;'>$nombre</td></tr>
-      <tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; font-size: 0.9rem;'>Email</td><td style='padding: 10px 0; border-bottom: 1px solid #eee;'><a href='mailto:$email' style='color: #C8249A;'>$email</a></td></tr>
-      <tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; font-size: 0.9rem;'>Teléfono</td><td style='padding: 10px 0; border-bottom: 1px solid #eee;'>$telefono</td></tr>
-      " . ($tipo ? "<tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; font-size: 0.9rem;'>Tipo de evento</td><td style='padding: 10px 0; border-bottom: 1px solid #eee;'>$tipo</td></tr>" : '') . "
+        <tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; width: 130px; font-size: 0.9rem;'>Nombre</td><td style='padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 600;'>$nombre</td></tr>
+        <tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; font-size: 0.9rem;'>Email</td><td style='padding: 10px 0; border-bottom: 1px solid #eee;'><a href='mailto:$email' style='color: #C8249A;'>$email</a></td></tr>
+        <tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; font-size: 0.9rem;'>Teléfono</td><td style='padding: 10px 0; border-bottom: 1px solid #eee;'>$telefono</td></tr>
+        " . ($tipo ? "<tr><td style='padding: 10px 0; border-bottom: 1px solid #eee; color: #666; font-size: 0.9rem;'>Tipo de evento</td><td style='padding: 10px 0; border-bottom: 1px solid #eee;'>$tipo</td></tr>" : '') . "
     </table>
     <div style='margin-top: 24px;'>
-      <p style='color: #666; font-size: 0.85rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.1em;'>Mensaje:</p>
-      <p style='background: #f9f9f9; padding: 16px; border-radius: 8px; border-left: 3px solid #C8249A; line-height: 1.7; color: #333;'>$mensaje</p>
+        <p style='color: #666; font-size: 0.85rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.1em;'>Mensaje:</p>
+        <p style='background: #f9f9f9; padding: 16px; border-radius: 8px; border-left: 3px solid #C8249A; line-height: 1.7; color: #333;'>$mensaje</p>
     </div>
     <p style='margin-top: 32px; color: #aaa; font-size: 0.8rem;'>Enviado el $date • IP: {$_SERVER['REMOTE_ADDR']}</p>
-  </div>
+    </div>
 </body>
 </html>
 ";

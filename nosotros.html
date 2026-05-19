@@ -20,7 +20,7 @@
     <div class="navbar__inner">
       <a href="index.html" class="navbar__logo" aria-label="SHOWTECH SOLUTIONS — Inicio">
         <div class="navbar__logo-text">
-          <span><strong>SHOW</strong>TECH</span>
+          <span><em>SHOW</em><strong>TECH</strong></span>
           <span>SOLUTIONS</span>
         </div>
       </a>
@@ -31,6 +31,9 @@
         <a href="contacto.html" class="navbar__link">Contacto</a>
       </nav>
       <a href="contacto.html" class="btn btn--primary navbar__cta">Cotizar Evento</a>
+      <button class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+      </button>
       <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -105,56 +108,47 @@
 
     <!-- MISIÓN Y VISIÓN -->
     <section class="section mission-vision">
-      <div class="container">
-        <div class="mv-grid">
-          <!-- Imagen -->
-          <div class="mv-image reveal--left">
-            <div class="mv-image__wrap">
-              <!-- REEMPLAZAR: imagen del equipo en reunión -->
-              <div class="mv-image__placeholder" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
-            </div>
-          </div>
+<div class="container">
+  <!-- Título arriba, centrado -->
+  <div class="section-header section-header--center reveal" style="margin-bottom: 52px;">
+    <span class="tag-label">Nuestra esencia</span>
+    <div class="divider divider--center"></div>
+    <h2 class="display display--md">Sobre Nosotros</h2>
+  </div>
 
-          <!-- Contenido -->
-          <div class="mv-content reveal--right">
-            <span class="tag-label">Nuestra esencia</span>
-            <div class="divider"></div>
-            <h2 class="display display--md" style="margin-bottom: 40px;">Sobre Nosotros</h2>
+  <!-- Grid imagen + cards al mismo nivel -->
+  <div class="mv-grid">
+    <div class="mv-image reveal--left">
+      <div class="mv-image__wrap">
+        <div class="mv-image__placeholder" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+      </div>
+    </div>
 
-            <div class="mv-cards">
-              <div class="mv-card">
-                <div class="mv-card__icon">
-                  <i class="fa-solid fa-bullseye"></i>
-                </div>
-                <div>
-                  <h3>Misión</h3>
-                  <p>Crear experiencias inolvidables a través de la planificación y producción integral de eventos, ofreciendo soluciones creativas, personalizadas y de alta calidad que superen las expectativas de nuestros clientes.</p>
-                </div>
-              </div>
-
-              <div class="mv-card">
-                <div class="mv-card__icon">
-                  <i class="fa-solid fa-eye"></i>
-                </div>
-                <div>
-                  <h3>Visión</h3>
-                  <p>Ser una empresa líder en la industria de organización de eventos a nivel nacional, reconocida por la innovación, el profesionalismo y la excelencia en cada proyecto que realizamos.</p>
-                </div>
-              </div>
-
-              <div class="mv-card">
-                <div class="mv-card__icon">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-                <div>
-                  <h3>Valores</h3>
-                  <p>Creatividad, compromiso, honestidad y pasión. Trabajamos con dedicación para transformar cada idea en una celebración extraordinaria que perdure en la memoria.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="mv-cards reveal--right">
+      <div class="mv-card">
+        <div class="mv-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+        <div>
+          <h3>Misión</h3>
+          <p>Crear experiencias inolvidables a través de la planificación y producción integral de eventos, ofreciendo soluciones creativas, personalizadas y de alta calidad que superen las expectativas de nuestros clientes.</p>
         </div>
       </div>
+      <div class="mv-card">
+        <div class="mv-card__icon"><i class="fa-solid fa-eye"></i></div>
+        <div>
+          <h3>Visión</h3>
+          <p>Ser una empresa líder en la industria de organización de eventos a nivel nacional, reconocida por la innovación, el profesionalismo y la excelencia en cada proyecto que realizamos.</p>
+        </div>
+      </div>
+      <div class="mv-card">
+        <div class="mv-card__icon"><i class="fa-solid fa-heart"></i></div>
+        <div>
+          <h3>Valores</h3>
+          <p>Creatividad, compromiso, honestidad y pasión. Trabajamos con dedicación para transformar cada idea en una celebración extraordinaria que perdure en la memoria.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <!-- POR QUÉ ELEGIRNOS -->
@@ -273,7 +267,7 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="navbar__logo-text">
-            <span style="font-size: 1.2rem;"><strong style="color: var(--brand);">SHOW</strong>TECH</span>
+            <span><em>SHOW</em><strong>TECH</strong></span>
             <span style="font-size: 0.6rem; letter-spacing: 0.25em; color: var(--text-muted);">SOLUTIONS</span>
           </div>
           <p>Organizadores de eventos en Lima, Perú. Creamos experiencias inolvidables con pasión, creatividad y profesionalismo desde 2015.</p>

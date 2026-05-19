@@ -33,7 +33,7 @@
       <a href="index.html" class="navbar__logo" aria-label="SHOWTECH SOLUTIONS — Inicio">
         <!-- Si tienes logo PNG: <img src="assets/img/logo.png" alt="SHOWTECH" /> -->
         <div class="navbar__logo-text">
-          <span><strong>SHOW</strong>TECH</span>
+          <span><em>SHOW</em><strong>TECH</strong></span>
           <span>SOLUTIONS</span>
         </div>
       </a>
@@ -46,6 +46,11 @@
       </nav>
 
       <a href="contacto.html" class="btn btn--primary navbar__cta">Cotizar Evento</a>
+
+      <!-- Después del .navbar__cta y antes del .navbar__hamburger -->
+      <button class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+      </button>
 
       <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -72,34 +77,50 @@
       </div>
       <div class="hero__overlay"></div>
 
-      <div class="hero__content container">
-        <div class="hero__eyebrow reveal">
-          <span class="tag-label">Lima, Perú</span>
-          <span class="hero__sep"></span>
-          <span class="tag-label" style="color: var(--text-muted);">Desde 2015</span>
-        </div>
+      <div class="hero__inner container">
+  <!-- Texto izquierda -->
+  <div class="hero__content">
+    <div class="hero__eyebrow reveal">
+      <span class="tag-label">Lima, Perú</span>
+      <span class="hero__sep"></span>
+      <span class="tag-label" style="color: var(--text-muted);">Desde 2015</span>
+    </div>
+    <h1 class="hero__title display reveal reveal--d1">
+      Creamos Eventos<br />
+      <em>Inolvidables</em>
+    </h1>
+    <p class="hero__subtitle reveal reveal--d2">
+      Organizadores de eventos corporativos, bodas y celebraciones en Lima.<br />
+      Creatividad, logística y pasión en cada detalle.
+    </p>
+    <div class="hero__actions reveal reveal--d3">
+      <a href="contacto.html" class="btn btn--primary">
+        <i class="fa-solid fa-calendar-check"></i>
+        Cotizar Ahora
+      </a>
+      <a href="servicios.html" class="btn btn--outline">
+        Ver Servicios
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
 
-        <h1 class="hero__title display reveal reveal--d1">
-          Creamos Eventos<br />
-          <em>Inolvidables</em>
-        </h1>
-
-        <p class="hero__subtitle reveal reveal--d2">
-          Organizadores de eventos corporativos, bodas y celebraciones en Lima.<br />
-          Creatividad, logística y pasión en cada detalle.
-        </p>
-
-        <div class="hero__actions reveal reveal--d3">
-          <a href="contacto.html" class="btn btn--primary">
-            <i class="fa-solid fa-calendar-check"></i>
-            Cotizar Ahora
-          </a>
-          <a href="servicios.html" class="btn btn--outline">
-            Ver Servicios
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+  <!-- Imagen derecha -->
+  <div class="hero__image reveal--right">
+    <div class="hero__image-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80"
+        alt="Celebración de evento SHOWTECH SOLUTIONS"
+        loading="eager"
+      />
+      <!-- REEMPLAZAR: foto real de evento de SHOWTECH -->
+    </div>
+    <div class="hero__image-badge">
+      <i class="fa-solid fa-star"></i>
+      <span>+200 eventos exitosos</span>
+    </div>
+  </div>
+</div>
 
       <div class="hero__scroll-hint" aria-hidden="true">
         <span></span>
@@ -450,7 +471,7 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="navbar__logo-text" style="margin-bottom: 0;">
-            <span style="font-size: 1.2rem;"><strong style="color: var(--brand);">SHOW</strong>TECH</span>
+            <span><em>SHOW</em><strong>TECH</strong></span>
             <span style="font-size: 0.6rem; letter-spacing: 0.25em; color: var(--text-muted);">SOLUTIONS</span>
           </div>
           <p>Organizadores de eventos en Lima, Perú. Creamos experiencias inolvidables con pasión, creatividad y profesionalismo desde 2015.</p>

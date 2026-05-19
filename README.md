@@ -79,7 +79,7 @@ Abrir directamente `index.html` en el navegador. Todas las páginas y estilos fu
 
 Con XAMPP/Laragon, copiar la carpeta del proyecto dentro de `htdocs/` y acceder vía:
 ```
-http://localhost/showtech/
+http://localhost/NEW_UI_UX_SHOWTECH/
 ```
 
 ---

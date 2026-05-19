@@ -1,11 +1,6 @@
 /* =====================================================
-   SHOWTECH SOLUTIONS — nosotros.css
+  SHOWTECH SOLUTIONS — nosotros.css
    ===================================================== */
-
-/* Hero específico */
-.nosotros-hero .page-hero__bg {
-  filter: brightness(0.25);
-}
 
 /* About intro */
 .about-intro__grid {
@@ -25,8 +20,8 @@
 .mv-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
-  align-items: start;
+  gap: 64px;
+  align-items: center; /* imagen y cards al mismo nivel */
 }
 
 .mv-image__wrap {

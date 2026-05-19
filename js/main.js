@@ -1,6 +1,6 @@
 /* =====================================================
-   SHOWTECH SOLUTIONS — main.js
-   Funcionalidades: navbar, scroll, animaciones, contador
+  SHOWTECH SOLUTIONS — main.js
+  Funcionalidades: navbar, scroll, animaciones, contador
    ===================================================== */
 
 (function () {
@@ -170,5 +170,24 @@
       heroBg.style.transform = `scale(1.05) translateY(${y * 0.3}px)`;
     }, { passive: true });
   }
+
+/* ---------- Toggle claro/oscuro ---------- */
+const themeToggle = document.querySelector('.theme-toggle');
+const html = document.documentElement;
+
+// Cargar preferencia guardada
+const savedTheme = localStorage.getItem('showtech-theme');
+if (savedTheme) html.setAttribute('data-theme', savedTheme);
+
+themeToggle?.addEventListener('click', () => {
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('showtech-theme', next);
+
+  // Cambiar ícono
+  const icon = themeToggle.querySelector('i');
+  icon.className = next === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+});
 
 })();
