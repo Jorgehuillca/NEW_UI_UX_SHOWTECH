@@ -63,6 +63,8 @@ if (!empty($_POST['website'])) {
 /* ---------- Construir correo ---------- */
 $tipoTexto = !empty($tipo) ? "Tipo de evento: $tipo\n" : '';
 
+$date = date('d/m/Y H:i');
+
 $bodyText = <<<EOT
 Nuevo mensaje desde el formulario de contacto de {$COMPANY_NAME}
 
@@ -77,9 +79,6 @@ $mensaje
 Enviado el: {$date}
 IP: {$_SERVER['REMOTE_ADDR']}
 EOT;
-
-$date = date('d/m/Y H:i');
-$bodyText = str_replace('{$date}', $date, $bodyText);
 
 $bodyHTML = "
 <!DOCTYPE html>
