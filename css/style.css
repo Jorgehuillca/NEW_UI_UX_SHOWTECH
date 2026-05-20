@@ -10,9 +10,9 @@
   --bg-2:        #F7F7F9;
   --bg-card:     #F0F0F4;
   --bg-card-2:   #E8E8EE;
-
+/*FF85CE*/
   --brand:       #C8249A;
-  --brand-2:     #E8556E;
+  --brand-2:     #FF85CE;
   --brand-light: rgba(200, 36, 154, 0.08);
 
   --grad-brand:  linear-gradient(135deg, #C8249A 0%, #E8556E 100%);
@@ -215,90 +215,102 @@ body::before {
    ============================================================ */
 
 .navbar {
+  padding: 16px 0;
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 1000;
-  padding: 20px 0;
-  transition: background var(--duration) var(--ease),
-              padding   var(--duration) var(--ease),
-              backdrop-filter var(--duration);
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  z-index: 999;
+  transition: all var(--duration) var(--ease);
+}
+.navbar .theme-toggle {
+  background: rgba(0,0,0,0.05);
+  color: var(--text);
 }
 
-/* ── Navbar transparente (top de página): siempre sobre imagen oscura ── */
-.navbar:not(.scrolled) .navbar__link {
-  color: rgba(255,255,255,0.82);
-}
+/* =========================================
+   EFECTO AL HACER SCROLL
+========================================= */
 
-.navbar:not(.scrolled) .navbar__link:hover,
-.navbar:not(.scrolled) .navbar__link.active {
-  color: #fff;
-  background: rgba(255,255,255,0.12);
-}
-
-.navbar:not(.scrolled) .navbar__link.active {
-  color: var(--brand);
-}
-
-/* Logo en transparente: siempre blanco */
-.navbar:not(.scrolled) .navbar__logo-text span:first-child em     { color: #fff; }
-.navbar:not(.scrolled) .navbar__logo-text span:first-child strong { color: var(--brand); }
-.navbar:not(.scrolled) .navbar__logo-text span:last-child         { color: rgba(255,255,255,0.55); }
-
-/* Hamburger en transparente */
-.navbar:not(.scrolled) .navbar__hamburger span { background: #fff; }
-
-/* Toggle en transparente */
-.navbar:not(.scrolled) .theme-toggle {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.25);
-  color: #fff;
-}
-
-/* ── Navbar scrolled MODO CLARO ── */
 .navbar.scrolled {
-  background: rgba(255,255,255,0.93);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.98);
 }
 
-.navbar.scrolled .navbar__link         { color: var(--text-muted); }
-.navbar.scrolled .navbar__link:hover   { color: var(--text); background: rgba(0,0,0,0.05); }
-.navbar.scrolled .navbar__link.active  { color: var(--brand); background: var(--brand-light); }
+/* =========================================
+   LINKS - MODO CLARO
+========================================= */
 
-/* Logo scrolled claro */
-.navbar.scrolled .navbar__logo-text span:first-child em     { color: #0F0F12; }
-.navbar.scrolled .navbar__logo-text span:first-child strong { color: var(--brand); }
-.navbar.scrolled .navbar__logo-text span:last-child         { color: var(--text-muted); }
-
-/* Hamburger scrolled claro */
-.navbar.scrolled .navbar__hamburger span { background: var(--text); }
-
-/* Toggle scrolled claro */
-.navbar.scrolled .theme-toggle {
-  background: var(--bg-card);
-  border-color: var(--border);
+.navbar .navbar__link {
   color: var(--text-muted);
 }
 
-/* ── Navbar scrolled MODO OSCURO ── */
-[data-theme="dark"] .navbar.scrolled {
-  background: rgba(9,9,11,0.92);
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+.navbar .navbar__link:hover {
+  color: var(--brand);
+  background: rgba(214, 51, 132, 0.08);
 }
 
-[data-theme="dark"] .navbar.scrolled .navbar__link        { color: rgba(255,255,255,0.6); }
-[data-theme="dark"] .navbar.scrolled .navbar__link:hover  { color: #fff; background: rgba(255,255,255,0.06); }
-[data-theme="dark"] .navbar.scrolled .navbar__link.active { color: var(--brand); }
+.navbar .navbar__link.active {
+  color: var(--brand);
+  background: rgba(214, 51, 132, 0.10);
+  font-weight: 700;
+  position: relative;
+}
 
-/* Logo scrolled oscuro */
-[data-theme="dark"] .navbar.scrolled .navbar__logo-text span:first-child em     { color: #F5F0F0; }
-[data-theme="dark"] .navbar.scrolled .navbar__logo-text span:first-child strong { color: var(--brand); }
-[data-theme="dark"] .navbar.scrolled .navbar__logo-text span:last-child         { color: var(--text-muted); }
+/* =========================================
+   DARK MODE
+========================================= */
 
-/* Hamburger scrolled oscuro */
-[data-theme="dark"] .navbar.scrolled .navbar__hamburger span { background: #F5F0F0; }
+[data-theme="dark"] .navbar {
+  background: rgba(15,15,18,0.95);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(15,15,18,0.98);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Links */
+[data-theme="dark"] .navbar .navbar__link {
+  color: rgba(255,255,255,0.72);
+}
+
+[data-theme="dark"] .navbar .navbar__link:hover {
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .navbar .navbar__link.active {
+  color: var(--brand);
+  background: rgba(214, 51, 132, 0.10);
+  font-weight: 700;
+  position: relative;
+}
+
+/* Logo */
+[data-theme="dark"] .navbar .navbar__logo-text span:first-child em {
+  color: #F5F0F0;
+}
+
+[data-theme="dark"] .navbar .navbar__logo-text span:first-child strong {
+  color: var(--brand);
+}
+
+[data-theme="dark"] .navbar .navbar__logo-text span:last-child {
+  color: rgba(255,255,255,0.55);
+}
+
+/* Hamburger */
+[data-theme="dark"] .navbar .navbar__hamburger span {
+  background: #F5F0F0;
+}
+
+/* Theme toggle */
+[data-theme="dark"] .navbar .theme-toggle {
+  background: rgba(255,255,255,0.06);
+  color: #F5F0F0;
+}
 
 /* ── Estructura interna navbar ── */
 .navbar__inner {
@@ -509,7 +521,6 @@ body::before {
   z-index: 2;
 }
 
-/* Todo el contenido del hero siempre blanco — fondo siempre oscuro */
 .page-hero__content * {
   color: rgba(255, 255, 255, 0.88);
 }
@@ -528,6 +539,7 @@ body::before {
 .page-hero__content .divider {
   background: var(--grad-brand);
 }
+
 
 /* ============================================================
    SECTION HEADER
