@@ -158,10 +158,16 @@
         <div class="about-preview__grid">
           <div class="about-preview__visual reveal--left">
             <div class="about-preview__media">
-              <!-- REEMPLAZAR: video o imagen real de evento -->
-              <div class="about-preview__placeholder" aria-hidden="true">
-                <i class="fa-solid fa-play-circle"></i>
-              </div>
+              <video
+                class="about-preview__video"
+                controls
+                playsinline
+                preload="metadata"
+                aria-label="Video de evento organizado por SHOWTECH SOLUTIONS"
+              >
+                <source src="assets/video/evento_showtech.mp4" type="video/mp4" />
+                Tu navegador no soporta video HTML5.
+              </video>
             </div>
             <div class="about-preview__badge">
               <i class="fa-solid fa-star"></i>

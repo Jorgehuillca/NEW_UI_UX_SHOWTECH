@@ -25,17 +25,23 @@
 }
 
 .mv-image__wrap {
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/3;
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border);
   position: relative;
 }
-
-.mv-image__placeholder {
+/* ---- Foto del equipo ---- */
+.mv-team-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
+
+
+
 
 .mv-cards {
   display: flex;
@@ -144,6 +150,10 @@
 }
 
 @media (max-width: 768px) {
+  .mv-image__wrap {
+    aspect-ratio: 4/3;
+  }
+
   .why-grid {
     grid-template-columns: 1fr;
   }

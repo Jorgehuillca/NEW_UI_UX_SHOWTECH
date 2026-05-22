@@ -418,11 +418,30 @@ a.contact-card:hover .contact-card__arrow {
 }
 
 @media (max-width: 768px) {
+  /* Título hero no desborda */
+  .contacto-hero .page-hero__content h1 {
+    font-size: clamp(2.8rem, 13vw, 5rem);
+    word-break: break-word;
+    hyphens: auto;
+  }
+
   .contact-form-card {
-    padding: 28px 24px;
+    padding: 24px 16px;
   }
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  /* Mapa ocupa ancho completo */
+  .map-wrap iframe {
+    height: 280px;
+  }
+
+  /* Email largo no desborda en cards */
+  .contact-card__body p {
+    white-space: normal;
+    word-break: break-all;
+    font-size: 0.85rem;
   }
 }
